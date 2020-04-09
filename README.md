@@ -9,8 +9,13 @@ This algorithm is one of the machine learning techniques known as unsupervised l
 
 The project is written using Python 3.8.0 and licensed under Apache License 2.0. Full source code is [available on the following link](https://github.com/Dparedero/Hierarchical_Clustering). 
 
-### Use Cases
-The project looks to address the main objective of given a data set, obtaining a dendrogram that classifies the data clusters from most similar to least similar based on certain established metrics that translate the distance into similarity.
+### Use Case
+The project looks to address the main objective of given a dataset, obtaining a dendrogram that classifies the records into data clusters from most similar to least similar based on certain established metrics that translate the distance into similarity.
+
+## Input and output
+### Input
+
+### Output
 
 
 ## Agglomerative clustering algorithm
@@ -101,7 +106,7 @@ while i < m:
 
     i += 1
 ```            
-The the number of times that are necesary for the loops is calculated as N-1, being N the total number of records
+The the number of times that necesary for the loop is calculated as N-1, being N the total number of records.
 
 ## Distance Library
 
