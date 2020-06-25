@@ -15,8 +15,11 @@ The project looks to address the main objective of given a dataset, obtaining a 
 ## Input and output
 ### Input
 
+An input matrix for example it is given on the [following link](https://github.com/DParedero/Hierarchical_Clustering/blob/master/data/matrix.txt). It consists of 12 vectors 5-dimensionals. Any other input can be performed by creating a matrix.txt file in the data folder, giving a line for each vector. 
+
 ### Output
 
+The output file is generated in the [output folder](https://github.com/DParedero/Hierarchical_Clustering/tree/master/output). It consist of a .txt file with all the iterations of the algorithm, forming the dendrogram.
 
 ## Agglomerative clustering algorithm
 
