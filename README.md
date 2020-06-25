@@ -77,7 +77,7 @@ Cluster = Functions.Distance.Simple_Link(M_dist)
 ```
 
 
-3. The distance between the new cluster and the rest of the clusters is calculated and the M variable y updated:
+3. The distance between the new cluster and the rest of the clusters is calculated and the M variable is updated:
 
 ```python
 M_dist = Functions.Distance.Update_Matrix(i, M_dist[Cluster][0], M_dist[Cluster][1], M_dist)
@@ -110,13 +110,47 @@ while i < m:
 
     i += 1
 ```            
-The the number of times that necesary for the loop is calculated as N-1, being N the total number of records.
+The number of times that necesary for the loop is calculated as N-1, being N the total number of records.
 
 ## Distance Library
 
-The library developed contains 3 functions that are used in the algorithm.
+The library developed contains 3 functions that are used in the algorithm. These 3 functions are developed in the [library file](https://github.com/DParedero/Hierarchical_Clustering/blob/master/venv/Functions/Distance.py).
 
 ### Euclidean_Dist Function
+
+This function receives a matrix of N vectors and calculates the Euclidean distance between each of the vectors, returning as output another matrix with <a href="https://www.codecogs.com/eqnedit.php?latex=\binom{N}{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\binom{N}{2}" title="\binom{N}{2}" /></a>x3 dimensions. The reason of these dimensions is because the output is the combination of the N vectors without repetition and taken 2, including the distance between these 2 vectors.
+
+The function code is as follows:
+```python
+def Euclidean_Dist(M):
+
+    M_dist = []
+
+    i = 0
+    j = 0
+    n = len(M)
+    while i < n:
+
+        j = i + 1
+        while j < n:
+
+            l = []
+            cont = 0
+            d = 0
+            lenV = len(M[i])
+            while cont < lenV:
+
+                v = M[i][cont]-M[j][cont]
+                d = d + v**2
+                cont += 1
+
+            distancia = d**(0.5)
+            M_dist.append([i,j,distancia])
+            j += 1
+
+        i += 1
+    return M_dist
+```
 
 ### Simple_Link Function
 
