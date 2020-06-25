@@ -20,6 +20,10 @@ The project looks to address the main objective of given a dataset, obtaining a 
 
 ## Agglomerative clustering algorithm
 
+
+[File](https://github.com/DParedero/Hierarchical_Clustering/blob/master/Main.py)
+
+
 The steps of the algorithm are the following. Given a set of N points (determinated by the N records of the dataset), the algorithm proceeds like this:
 
 1. Each point is assigned to a cluster, so initially there are N clusters of 1 element each one.
