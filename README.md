@@ -110,7 +110,7 @@ while i < m:
 
     i += 1
 ```            
-The number of times that necesary for the loop is calculated as N-1, being N the total number of records.
+The number of times necessary for the loop is calculated as N-1, being N the total number of records.
 
 ## Distance Library
 
