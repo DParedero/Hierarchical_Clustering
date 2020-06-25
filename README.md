@@ -118,7 +118,7 @@ The library developed contains 3 functions that are used in the algorithm. These
 
 ### Euclidean_Dist Function
 
-This function receives a matrix of N vectors and calculates the Euclidean distance between each of the vectors, returning as output another matrix with <a href="https://www.codecogs.com/eqnedit.php?latex=\binom{N}{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\binom{N}{2}" title="\binom{N}{2}" /></a>x3 dimensions. The reason of these dimensions is because the output is the combination of the N vectors without repetition and taken 2, including the distance between these 2 vectors.
+This function receives a matrix of N vectors and calculates the Euclidean distance between each of the vectors, returning as output another matrix with <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\binom{N}{2}\times3" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\binom{N}{2}\times3" title="\binom{N}{2}\times3" /></a> dimensions. The reason of these dimensions is because the output is the combination of the N vectors without repetition and taken 2, including the distance between these 2 vectors.
 
 The function code is as follows:
 ```python
